@@ -1,9 +1,14 @@
 #Name{
-  font-family: Copperplate;
   font-weight: bold;
 
 }
 
 h2{
   font-weight: bold;
+}
+
+*{
+  background-color: black;
+  color: #2afe15;
+  font-family: 'Fira Code', monospace;;
 }
