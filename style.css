@@ -12,3 +12,11 @@ h2{
   color: #2afe15;
   font-family: 'Fira Code', monospace;
 }
+
+.find{
+  text-decoration: underline;
+}
+
+.imgLinks:hover{
+  color: white;
+}
