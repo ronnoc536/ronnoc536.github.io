@@ -18,18 +18,18 @@ h2{
 }
 
 .imgLinks:hover{
-  color: white;
+  color: white !important;
 }
 
 .resumeHeader{
-  color: magenta;
+  color: magenta !important;
   font-weight: 400;
 }
 
 #turnWhite{
-  color: white;
+  color: white !important;
 }
 
 #turnAqua{
-  color: aqua;
+  color: aqua !important;
 }
