@@ -33,3 +33,7 @@ h2{
 #turnAqua{
   color: aqua !important;
 }
+
+#needsUnderline{
+  text-decoration: underline;
+}
