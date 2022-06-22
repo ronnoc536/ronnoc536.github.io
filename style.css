@@ -20,3 +20,16 @@ h2{
 .imgLinks:hover{
   color: white;
 }
+
+.resumeHeader{
+  color: magenta;
+  font-weight: 400;
+}
+
+#turnWhite{
+  color: white;
+}
+
+#turnAqua{
+  color: aqua;
+}
