@@ -13,14 +13,6 @@ h2{
   font-family: 'Fira Code', monospace;
 }
 
-.find{
-  text-decoration: underline;
-}
-
-.imgLinks:hover{
-  color: white !important;
-}
-
 .resumeHeader{
   color: magenta !important;
   font-weight: 400;
@@ -36,4 +28,99 @@ h2{
 
 #needsUnderline{
   text-decoration: underline;
+}
+
+.bio-container {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  height: 100vh; /* Full viewport height */
+  padding: 20px; /* Adds some space inside the container */
+}
+
+.bio-image img {
+  width: 100%; /* Makes the image fully occupy its container */
+  max-width: 400px; /* Limits image width */
+  height: auto; /* Keeps the image aspect ratio */
+  border-radius: 10px; /* Optional: rounds the corners of the image */
+}
+
+.bio-text {
+  max-width: 600px; /* Limits the text width */
+  margin-left: 20px; /* Adds space between the image and the text */
+  font-size: 18px; /* Sets a comfortable reading font size */
+  color: #333; /* Sets the text color */
+}
+
+@media (max-width: 800px) {
+  .bio-container {
+      flex-direction: column; /* Stacks the image and text vertically on smaller screens */
+  }
+
+  .bio-text {
+      margin-left: 0;
+      margin-top: 20px; /* Adds space between the image and the text on small screens */
+  }
+}
+/* General styling for the navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px; /* Padding around items */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.home-icon img {
+  width: 64px; /* Sets the size of the home icon */
+  height: auto;
+  background-size: cover;
+}
+
+.home-icon img:hover {
+  width: 64px; /* Sets the size of the home icon */
+  height: auto;
+  background-image: url('./media/green_pink.png');
+  background-position: center;
+}
+
+.nav-links {
+  margin-left: auto; /* Pushes the links to the right */
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2afe15; /* Dark grey/black text color */
+  padding: 0 15px; /* Spacing between links */
+  font-size: 16px; /* Size of the text */
+  letter-spacing: 0.1px; /* Optional: slight spacing between letters for aesthetics */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-links a:hover {
+  color: magenta; /* Color changes when hovered over */
+}
+
+
+.index_page {
+  overflow: hidden;
+}
+
+
+/* MOUSE TRAIL */
+.trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+.dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: magenta; /* Change color and opacity as desired */
+  transition: all 0.3s ease-out;
 }

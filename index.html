@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="index_page">
   <head>
     <title>CM - Main</title>
     <link href="./style.css" rel="stylesheet">
@@ -10,37 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
   </head>
-  <header><h1 id = "Name">Connor Marler - Computer Science Student</h1></header>  
-  <nav>
-    <h4 class="find">Places to Find Me</h4>
-    <div class = "imgLinks">
-      <a href="https://www.linkedin.com/in/connormarler/" target="_blank"><img src=./media/linkedin.png height="25" 
-      width="95"></a>
-      <a href="https://github.com/ronnoc536" target="_blank"><img src=./media/github.png height="35" 
-      width="35"></a>
-    </div>
-    
-  </nav>
-  <br>
-  <main>
-    <h3>About Me</h3>
-    <p>
-      My name is Connor and I am a computer science student at 
-      Missouri University of Science and Technology. I 
-      love learning more about my field, problem solving in 
-      teams, and finding software solutions. My active interest 
-      software companies can be seen through my job shadowing during my 
-      Senior year of high school at Paperwise, World Wide Technology's 
-      Asynchrony Labs, and Expedia Group. I love working with my 3D-Printer 
-      and playing Dungeons and Dragons with my friends.
-    </p>
-    <br>
-    <a href="./resume.html">Resume (click me!)</a>
-  </main>
-  <br>
-  <footer>
-    <h3>Contact Me</h3>
-    <p>E-Mail: ConnorMarler536@gmail.com</p>
-    <p>Call/Text: (417) 493-5479</p>
-  </footer>
+  <header>
+    <!--Mouse Trail Effect-->
+    <div class="trail"></div>
+    <script src="./mouseTrail.js"></script>
+
+      <!--NAVBAR-->
+      <nav class="navbar">
+          <a href="index.html" class="home-icon">
+              <img src="./media/pixil-frame-0.png" alt="Home"> <!-- Make sure you have a home icon image -->
+          </a>
+          <div class="nav-links">
+              <a href="./about.html">About</a>
+              <a href="./resume.html">Resume</a>
+          </div>
+      </nav>
+
+    </header>
+    <body>
+      <div class="bio-container">
+        <div class="bio-image">
+            <img src="./media/me.png" alt="Me">
+        </div>
+        <div class="bio-text">
+            <h1>Connor Marler</h1>
+            <h2>Computer Science Student</h2>
+            <p>
+              My name is Connor and I am a computer science student at 
+              Missouri University of Science and Technology. I 
+              love learning more about my field, problem solving in 
+              teams, and finding software solutions. My active interest 
+              software companies can be seen through my job shadowing during my 
+              Senior year of high school at Paperwise, World Wide Technology's 
+              Asynchrony Labs, and Expedia Group. I love working with my 3D-Printer 
+              and playing Dungeons and Dragons with my friends.
+            </p>
+        </div>
+  </body>
+  
+</div> 
 </html>
