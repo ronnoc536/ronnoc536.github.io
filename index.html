@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html class="index_page">
-  <head>
+<head>
     <title>CM - Main</title>
     <link href="./style.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <!--Fira Code Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="./media/favicon.ico" type="image/x-icon">
-  </head>
-  <header>
-    <!--Mouse Trail Effect-->
-    <div class="trail"></div>
-    <script src="./mouseTrail.js"></script>
-
-      <!--NAVBAR-->
-      <nav class="navbar">
-          <a href="index.html" class="home-icon">
-              <img src="./media/pixil-frame-0.png" alt="Home"> <!-- Make sure you have a home icon image -->
-          </a>
-          <div class="nav-links">
-              <a href="./about.html">About</a>
-              <a href="./resume.html">Resume</a>
-          </div>
-      </nav>
-
+</head>
+<body>
+  <div class="trail"></div>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <a href="index.html" class="home-icon">
+                <img src="./media/pixil-frame-0.png" alt="Home">
+            </a>
+            <div class="nav-links">
+                <a href="./about.html">About</a>
+                <a href="./resume.html">Resume</a>
+            </div>
+        </nav>
     </header>
-    <body>
-      <div class="bio-container">
+
+    <div class="bio-container">
         <div class="bio-image">
             <img src="./media/me.png" alt="Me">
         </div>
         <div class="bio-text">
             <h1>Connor Marler</h1>
             <h2>Computer Science Student</h2>
-            <p>
+            <p id="bio">
               My name is Connor and I am a computer science student at 
               Missouri University of Science and Technology. I 
               love learning more about my field, problem solving in 
@@ -47,7 +42,10 @@
               and playing Dungeons and Dragons with my friends.
             </p>
         </div>
-  </body>
-  
-</div> 
+    </div>
+    <script src="./typing.js"></script>
+
+    
+    <script src="./mouseTrail.js"></script>
+</body>
 </html>

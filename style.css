@@ -50,6 +50,7 @@ h2{
   margin-left: 20px; /* Adds space between the image and the text */
   font-size: 18px; /* Sets a comfortable reading font size */
   color: #333; /* Sets the text color */
+
 }
 
 @media (max-width: 800px) {
@@ -120,3 +121,5 @@ h2{
   background-color: magenta; /* Change color and opacity as desired */
   transition: all 0.3s ease-out;
 }
+
+
