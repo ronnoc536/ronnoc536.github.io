@@ -1,5 +1,5 @@
-// Define the secret key combination: Control (Ctrl), Left Shift, and P
-const rickRoll = ['ControlLeft', 'ShiftLeft', 'KeyP'];
+// Define the secret key combination: RICK
+const rickRoll = ['KeyR', 'KeyI', 'KeyC', 'KeyK'];
 const crash = ['KeyC', 'KeyR', 'KeyA', 'KeyS', 'KeyH'];
 
 // Index to keep track of the current position in the secretKeys array
