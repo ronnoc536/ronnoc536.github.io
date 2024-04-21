@@ -216,3 +216,89 @@ h2{
 .footer p {
   margin: 5px 0;
 }
+
+
+
+
+
+
+.social-icon {
+  display: inline-block; /* Align properly within the nav */
+  margin-left: 10px; /* Space between icons */
+  transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.social-icon img {
+  width: 24px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.social-icon:hover img {
+  transform: scale(1.2); /* Icon grow effect on hover */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2afe15; /* Dark grey/black text color */
+  padding: 0 15px; /* Spacing between links */
+  font-size: 16px; /* Size of the text */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-links a:hover {
+  color: magenta; /* Color changes when hovered over */
+}
+
+
+
+
+
+
+.prank-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  perspective: 1000px;
+}
+
+.prank-content {
+  color: white;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+.cube {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  animation: spin 5s infinite linear;
+}
+
+.cube div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+}
+
+/* Face positioning */
+.cube .front  { transform: translateZ(25px); }
+.cube .back   { transform: rotateY(180deg) translateZ(25px); }
+.cube .right  { transform: rotateY(90deg) translateZ(25px); }
+.cube .left   { transform: rotateY(-90deg) translateZ(25px); }
+.cube .top    { transform: rotateX(90deg) translateZ(25px); }
+.cube .bottom { transform: rotateX(-90deg) translateZ(25px); }
+
+@keyframes spin {
+  from { transform: rotateX(0deg) rotateY(0deg); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
