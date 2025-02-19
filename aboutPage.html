@@ -1,40 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CM - About</title>
-        <link href="./style.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <!--Fira Code Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
-        <link rel="icon" href="./media/favicon1.ico" type="image/x-icon">
-    </head>
-    <header>
-        <!--Mouse Trail Effect-->
-        <div class="trail"></div>
-        <script src="./mouseTrail.js"></script>
-        
-        <!-- NAVBAR -->
-        <nav class="navbar">
-          <a href="index.html" class="home-icon">
-              <img src="./media/pixil-frame-0.png" alt="Home">
-          </a>
-          <div class="nav-links">
-            <a href="https://github.com/ronnoc536" target="_blank" class="social-icon">
-              <img src="./media/github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/connormarler" target="_blank" class="social-icon">
-              <img src="./media/linkedin.png" alt="LinkedIn">
-            </a>
-              <a href="./about.html">About</a>
-              <a href="./resume.html">Resume</a>
-          </div>
-      </nav>
-    </header>
+<html class="index_page">
+  <head>
+    <title>CM - About</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./media/favicon1.ico" type="image/x-icon">
+    <script src="./loadComponents.js" defer></script>
+  </head>
 
+  <body>
+    <div class="trail"></div>
 
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+    <!-- ABOUT BUBBLES CONTENT -->
     <body>
       <div class="bubbles-container">
         <!-- Bubble 1 -->
@@ -96,12 +78,12 @@
 
         <script src="bubbles.js"></script>
     </body>
-  <br>
-  <footer class="footer">
-    <div class="footer-content">
-        <h2>Contact Me</h2>
-        <p>Email: connormarler536@gmail.com</p>
-        <p>Phone: (417) 493-5479</p>
-    </div>
-  </footer>
+
+    <script src="./typing.js"></script>
+    <script src="./easterEgg.js"></script>
+    <script src="./mouseTrail.js"></script>
+  </body>
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
 </html>

@@ -14,4 +14,5 @@ document.querySelectorAll('.bubble').forEach(bubble => {
       this.classList.toggle('flip');
   });
   */
+  console.log('Bubble event listeners added');
 });
