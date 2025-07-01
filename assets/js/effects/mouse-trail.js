@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+function initMouseTrail() {
     var trail = document.querySelector(".trail");
+    if (!trail) return;
+    
     var dots = [];
 
     // Create dots
@@ -23,4 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }, delay);
         });
     });
-});
+}
+
+// Export for modular use
+window.initMouseTrail = initMouseTrail;

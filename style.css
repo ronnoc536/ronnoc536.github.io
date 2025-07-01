@@ -81,7 +81,7 @@ h2{
 .home-icon img:hover {
   width: 64px; /* Sets the size of the home icon */
   height: auto;
-  background-image: url('./media/green_pink.png');
+  background-image: url('./assets/media/green_pink.png');
   background-position: center;
 }
 
